@@ -87,7 +87,7 @@ const Error = styled.p`
 `;
 
 function Form() {
-  const [isError, setIsError] = useState(false);
+  const [isError, setIsError] = useState(false); // 'wrongFormat' or 'empty'
   const [email, setEmail] = useState("");
   const emailRegex = /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/;
 
@@ -97,14 +97,20 @@ function Form() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (isValidEmail(e.target[0].value)) {
-      setIsError(false);
-    } else {
-      setIsError(true);
+    if (e.target[0].value === "") {
+      setIsError("empty");
+    } else if (!isValidEmail(e.target[0].value)) {
+      setIsError("wrongFormat");
       return;
+    } else {
+      setIsError(false);
     }
 
     setEmail("");
+
+    setTimeout(() => {
+      console.log(isError);
+    }, 1000);
   }
 
   return (
@@ -116,11 +122,14 @@ function Form() {
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           isError={isError}
-          required
         />
         <Button type="submit">Request Access</Button>
       </TabletDesktopView>
-      {isError && <Error>Oops! Please check your email</Error>}
+      {isError ? isError === "empty" ? (
+        <Error>Oops! Please enter your email</Error>
+      ) : (
+        <Error>Oops! Please check your email</Error>
+      ) : <></>}
     </StyledForm>
   );
 }
