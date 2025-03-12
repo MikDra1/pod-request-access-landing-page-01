@@ -10,7 +10,7 @@ const StyledForm = styled.form`
 `;
 
 const TabletDesktopView = styled.div`
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     display: flex;
     margin-top: 2rem;
     flex-direction: row;
@@ -41,7 +41,7 @@ const Input = styled.input`
     color: var(--blue-300);
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     margin-bottom: 0;
     background-color: transparent;
     padding: 0 0 0 1rem;
@@ -62,7 +62,7 @@ const Button = styled.button`
   font-weight: bold;
   cursor: pointer;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     margin-left: 2rem;
     padding: 0.75rem;
   }
@@ -76,7 +76,7 @@ const Error = styled.p`
   color: var(--red);
   margin-top: 0.5rem;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     margin-left: 1.5rem;
   }
 

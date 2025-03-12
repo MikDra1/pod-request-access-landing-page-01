@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   margin-inline: auto;
   min-height: 100vh;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     background-image: linear-gradient(
         to right,
         rgba(84, 230, 175, 0.2),
@@ -69,9 +69,9 @@ const Wrapper = styled.div`
 `;
 
 const Box = styled.div`
-  max-width: 600px;
+  max-width: 700px;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     background-color: var(--blue-950);
     position: absolute;
     bottom: 0;
@@ -93,7 +93,7 @@ const LogoContainer = styled.div`
   margin-inline: auto;
   margin-bottom: 3rem;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     height: 100vh;
     background-color: var(--blue-950);
     padding-right: 5rem;
@@ -104,8 +104,8 @@ const LogoContainer = styled.div`
   }
 
   @media (min-width: 1100px) {
-    padding-left: 8rem;
     padding-top: 11rem;
+    padding-left: 8rem;
   }
 `;
 
@@ -118,7 +118,7 @@ const ImgPattern = styled.img`
   transform: translate(25%, 25%);
   display: none;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     display: block;
   }
 

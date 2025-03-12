@@ -12,7 +12,7 @@ const Title = styled.h1`
     color: var(--green);
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     font-size: 2.75rem;
   }
 `;
@@ -22,7 +22,7 @@ const Description = styled.p`
   font-weight: 100;
   line-height: 1.5;
 
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     max-width: 40ch;
     margin-block: 0.5rem;
   }

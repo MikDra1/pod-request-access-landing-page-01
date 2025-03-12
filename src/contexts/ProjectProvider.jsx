@@ -11,7 +11,7 @@ function ProjectProvider({ children }) {
   useEffect(
     function () {
       setIsDesktop(screenSize.width >= 1100);
-      setIsTablet(screenSize.width >= 600);
+      setIsTablet(screenSize.width >= 700);
     },
     [screenSize.width]
   );
