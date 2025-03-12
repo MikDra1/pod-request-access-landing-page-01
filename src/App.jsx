@@ -39,8 +39,8 @@ const Wrapper = styled.div`
   @media (min-width: 600px) {
     background-image: linear-gradient(
         to right,
-        rgba(84, 230, 175, 0.3),
-        rgba(84, 230, 175, 0.3)
+        rgba(84, 230, 175, 0.2),
+        rgba(84, 230, 175, 0.2)
       ),
       url("/assets/tablet/image-host.jpg");
     background-size: 42rem 100%, 42rem 100%; /* Prevents the image from stretching */
@@ -57,13 +57,13 @@ const Wrapper = styled.div`
   @media (min-width: 1100px) {
     background-image: linear-gradient(
         to right,
-        rgba(84, 230, 175, 0.3),
-        rgba(84, 230, 175, 0.3)
+        rgba(84, 230, 175, 0.2),
+        rgba(84, 230, 175, 0.2)
       ),
       url("/assets/desktop/image-host.jpg");
     background-size: cover;
     background-position: center;
-    background-size: 52rem 65%, 52rem 65%; /* Prevents the image from stretching */
+    background-size: 55rem 65%, 55rem 65%; /* Prevents the image from stretching */
     background-position: center right; /* Positions the image at the top right */
   }
 `;
@@ -83,8 +83,9 @@ const Box = styled.div`
   @media (min-width: 1100px) {
     width: 100vw;
     max-width: 50rem;
-    padding: 5rem 6rem 6rem 6rem;
+    padding: 4rem 6rem 6rem 6rem;
     bottom: 3rem;
+    left: 3rem;
   }
 `;
 
@@ -103,7 +104,7 @@ const LogoContainer = styled.div`
   }
 
   @media (min-width: 1100px) {
-    padding-left: 5rem;
+    padding-left: 8rem;
     padding-top: 11rem;
   }
 `;
