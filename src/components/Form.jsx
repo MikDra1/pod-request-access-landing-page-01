@@ -61,6 +61,11 @@ const Button = styled.button`
   color: var(--blue-950);
   font-weight: bold;
   cursor: pointer;
+  transition: all .3s;
+
+  &:hover {
+    background-color: rgb(169, 239, 213);
+  }
 
   @media (min-width: 700px) {
     margin-left: 2rem;
